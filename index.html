@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vector Design – Product Engineering & Prototyping</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700;800&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Particle Canvas Background -->
+<canvas id="particleCanvas"></canvas>
+
+<!-- Floating Orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">
+      <img class="logo-icon" src="images/VD_WHITE_CROP.png" alt="Vector Design logo" />
+      
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#workflow">Process</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-label">Engineering Validation Studio</div>
+  <h1 class="hero-title">
+    <span>Your Technical Co-Founder</span><br>
+    <span>Without Equity</span>
+  </h1>
+  <p style="font-family:'Oxanium';font-size:1.8rem;font-weight:600;margin:1rem 0;color:var(--text-primary);">Vector Design</p>
+  <p style="font-size:1rem;color:var(--text-secondary);margin-bottom:1.5rem;">Mechanical, Embedded Systems & Electronics</p>
+  <p class="hero-description">
+    We transform your ideas into products. Mechanical design, embedded firmware, custom electronics—all integrated. Reduce uncertainty, validate assumptions, and build products that work. From early-stage feasibility to production-ready designs.
+  </p>
+  <div class="cta-group">
+    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Let's Discuss</button>
+    <button class="btn btn-secondary" onclick="document.getElementById('workflow').scrollIntoView({ behavior: 'smooth' });">Know How We Work</button>
+  </div>
+</section>
+
+<!-- Workflow Section -->
+<section id="workflow">
+  <div class="workflow-intro">
+    <h3>4-Phase Generic Engineering Process</h3>
+    <p>From idea validation to manufacturing-ready design</p>
+    <p style="margin-top: 0.5rem; color: var(--cyan);">We'll catch up at your stage</p>
+  </div>
+
+  <div class="workflow-steps">
+    <div class="workflow-step">
+      <div class="workflow-number">01</div>
+      <div class="workflow-title">Understand & Scope</div>
+      <ul class="workflow-details">
+        <li>Technical requirements</li>
+        <li>Market constraints</li>
+        <li>Your Vision</li>
+      </ul>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-number">02</div>
+      <div class="workflow-title">Design & Simulate</div>
+      <ul class="workflow-details">
+        <li>CAD architecture</li>
+        <li>Electronics schematics</li>
+        <li>FEA validation</li>
+      </ul>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-number">03</div>
+      <div class="workflow-title">Build & Test</div>
+      <ul class="workflow-details">
+        <li>Rapid prototyping</li>
+        <li>Firmware programming</li>
+        <li>Performance testing</li>
+      </ul>
+    </div>
+
+    <div class="workflow-step">
+      <div class="workflow-number">04</div>
+      <div class="workflow-title">Refine & Document</div>
+      <ul class="workflow-details">
+        <li>Iterate based on data</li>
+        <li>DFM review</li>
+        <li>Complete tech pack</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Next Steps Section -->
+<section style="text-align:center;padding:3rem 2rem;">
+  <h2 class="section-title">Choose Where to Engage</h2>
+  <p class="section-subtitle">
+    You don't have to start from scratch. We meet you where you are—whether you need validation, a full prototype, or production support.
+  </p>
+
+  <div class="features-grid">
+    <div class="feature-card" style="background-image: url('images/feasibility assignment.jpg');">
+      <h3 class="feature-title">Feasibility Assessment</h3>
+      <p class="feature-description">No commitment. We review your concept, outline risk factors, and give you an engineering reality check. Honest, upfront advice before you invest further.</p>
+    </div>
+
+    <div class="feature-card" style="background-image: url('images/concept to cad.jpg');">
+      <h3 class="feature-title">Concept-to-CAD Development</h3>
+      <p class="feature-description">Start from an idea. We translate your vision into a fully engineered CAD model with proper tolerances, simulations, and manufacturing considerations.</p>
+    </div>
+
+    <div class="feature-card" style="background-image: url('images/prototype building.jpg');">
+      <h3 class="feature-title">Prototype Build & Validation</h3>
+      <p class="feature-description">Working prototype with electronics, firmware, and mechanical assembly. Real-world testing that reveals what works and what needs fixing.</p>
+    </div>
+
+    <div class="feature-card" style="background-image: url('images/production ready handoff.jpg');">
+      <h3 class="feature-title">Production-Ready Handoff</h3>
+      <p class="feature-description">Complete technical documentation: CAD files, BOMs, Gerbers, schematics, firmware, DFM reports. Everything your CM needs to quote and manufacture.</p>
+    </div>
+
+    <div class="feature-card" style="background-image: url('images/electronics and firmware.jpg');">
+      <h3 class="feature-title">Electronics & Firmware</h3>
+      <p class="feature-description">Custom PCB design and embedded programming. Sensor integration, wireless communication, motor control—production-grade electronics that work.</p>
+    </div>
+
+    <div class="feature-card" style="background-image: url('images/engineering consulting.jpg');">
+      <h3 class="feature-title">Engineering Consulting</h3>
+      <p class="feature-description">Not sure what you need? Let's talk. We help define requirements, choose technologies, estimate timelines, and plan budgets for your hardware project.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Vector Design Section -->
+<section>
+  <h2 class="section-title">Why Vector Design</h2>
+  <p class="section-subtitle">We reduce risk, cost, and time-to-market for hardware startups</p>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">💰</div>
+      <h3 class="feature-title">Cost of Validation vs. Cost of Failure</h3>
+      <p class="feature-description">Spend $10K validating. Or spend $500K fixing manufacturing mistakes. We help you pick the cheaper path.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <h3 class="feature-title">Data-Driven Design</h3>
+      <p class="feature-description">Simulation results, stress analysis, thermal validation. You make decisions based on engineering numbers, not hope.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🔧</div>
+      <h3 class="feature-title">Mechanical + Electronics + Firmware</h3>
+      <p class="feature-description">One team handles all disciplines. No handoff delays. Integrated design from day one—mechanical and electrical work together.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <h3 class="feature-title">Rapid Iteration</h3>
+      <p class="feature-description">Fast prototyping cycles. We iterate in CAD and simulation before touching hardware. Get answers in weeks, not months.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🏭</div>
+      <h3 class="feature-title">Manufacturing-Ready Outputs</h3>
+      <p class="feature-description">Complete documentation: CAD files, schematics, BOMs, assembly instructions. Everything your CM needs for quoting and production.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🤝</div>
+      <h3 class="feature-title">No Long-Term Commitment</h3>
+      <p class="feature-description">Start with a feasibility study or prototype. Scale engagement as your product roadmap becomes clearer. Pay for what you need.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Selected Work Section -->
+<section id="work">
+  <h2 class="section-title">Selected Work</h2>
+  <p class="section-subtitle">
+    Examples of product development and mechanical engineering work
+  </p>
+
+  <div class="projects-grid">
+
+    <!-- Railway Track Inspection Robot -->
+    <div class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="images/projects/railway-robot.jpg"
+          alt="Railway Track Inspection Robot"
+          class="project-placeholder"
+        />
+        <div class="project-overlay">
+          <div class="project-tag">Patented Project</div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Railway Track Inspection Robot</h3>
+      </div>
+    </div>
+
+    <!-- In-Wheel BLDC Holonomic Drive -->
+    <div class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="images/projects/holonomic-drive.jpg"
+          alt="In-Wheel BLDC Holonomic Drive"
+          class="project-placeholder"
+        />
+        <div class="project-overlay">
+          <div class="project-tag">Drive Systems</div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">In-Wheel BLDC Holonomic Drive</h3>
+      </div>
+    </div>
+
+    <!-- Autonomous Mobile Robot -->
+    <div class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="images/projects/amr-development.jpg"
+          alt="Autonomous Mobile Robot Development"
+          class="project-placeholder"
+        />
+        <div class="project-overlay">
+          <div class="project-tag">Robotics Engineering</div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Autonomous Mobile Robot (AMR)</h3>
+      </div>
+    </div>
+
+    <!-- ABU Robocon 2024 -->
+    <div class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="images/projects/robocon2024.jpg"
+          alt="ABU Robocon 2024 Robot"
+          class="project-placeholder"
+        />
+        <div class="project-overlay">
+          <div class="project-tag">AIR 2 • Runner-Up</div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">ABU Robocon 2024</h3>
+      </div>
+    </div>
+
+    <!-- ABU Robocon 2023 -->
+    <div class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="images/projects/robocon2023.jpg"
+          alt="ABU Robocon 2023 Robot"
+          class="project-placeholder"
+        />
+        <div class="project-overlay">
+          <div class="project-tag">Chassis Engineering</div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">ABU Robocon 2023</h3>
+      </div>
+    </div>
+
+    <!-- ABU Robocon 2022 -->
+    <div class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="images/projects/robocon2022.jpg"
+          alt="ABU Robocon 2022 Robot"
+          class="project-placeholder"
+        />
+        <div class="project-overlay">
+          <div class="project-tag">Competition Robotics</div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">ABU Robocon 2022</h3>
+      </div>
+    </div>
+
+    <!-- Wireless Charger -->
+    <div class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="images/projects/wireless-charger.jpg"
+          alt="Wireless Charger Product Design"
+          class="project-placeholder"
+        />
+        <div class="project-overlay">
+          <div class="project-tag">Published Research</div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Wireless Charger for Headphones</h3>
+      </div>
+    </div>
+
+    <!-- Team & Competition Showcase -->
+    <div class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="images/projects/micro_controller.jpg"
+          alt="PCB Development"
+          class="project-placeholder"
+        />
+        <div class="project-overlay">
+          <div class="project-tag">PCB</div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Customised Micro_Controller Board</h3>
+      </div>
+    </div>
+
+    <!-- TEMP PLACEHOLDER PROJECT -->
+    <div class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="images/projects/motor driver.jpg"
+          alt="Product Development Work"
+          class="project-placeholder"
+        />
+        <div class="project-overlay">
+          <div class="project-tag"> PCB</div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">BLDC Motor Driver PCB</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CTA Section -->
+<div class="cta-section">
+  <h3>Ready to Validate Your Hardware Idea?</h3>
+  <p>Book a free 30-minute technical consultation. No sales pitch—just an honest conversation about feasibility, timeline, and what validation looks like for your product.</p>
+  <div class="cta-group">
+    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Book a Feasibility Call</button>
+    <button class="btn btn-secondary" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">Explore Services</button>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <p class="section-subtitle">
+    Let's discuss your robotics and automation projects
+  </p>
+
+  <div style="max-width:900px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <h3 style="font-family:'Oxanium';font-size:1.8rem;margin-bottom:1rem;">Ready to Innovate Together?</h3>
+      <p style="color:var(--text-secondary);max-width:600px;margin:0 auto 2rem;line-height:1.7;">
+        I'm available for freelance projects, consulting, and collaboration opportunities 
+        in robotics, mechanical design, and industrial automation. Let's bring your ideas to life.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">📧</div>
+        <h4>Email</h4>
+        <a href="mailto:workforameya@gmail.com" class="contact-link">workforameya@gmail.com</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">📱</div>
+        <h4>Call Me</h4>
+        <a href="tel:+918767147642" class="contact-link">+91 8767147642</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">💬</div>
+        <h4>WhatsApp</h4>
+        <a href="https://wa.me/918767147642" target="_blank" class="contact-link">Message on WhatsApp</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon">💼</div>
+        <h4>LinkedIn</h4>
+        <a href="https://www.linkedin.com/in/ameyaagnihotri" target="_blank" class="contact-link">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>
+    <strong>Vector Design</strong> · Building reliable hardware — Mechanical, Electronics, Firmware
+  </p>
+  <p style="color:var(--text-muted);margin-top:.5rem;">© <span id="year"></span> Vector Design · All rights reserved</p>
+</footer>
+
+<!-- Cursor Effect -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
